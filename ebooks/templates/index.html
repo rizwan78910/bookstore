@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+</head>
+<body>
+<h1> Welcome to UoS Bookshop</h1>
+<img src="{% static 'images/ncvbook2.jpg'%}">
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+{% for bk in books %}
+    <tr><td>{{bk.title}}</td>
+        <td>{{bk.author}}</td>
+        <td>{{bk.genre}}</td>
+        <td>{{bk.price}}</td>
+        <td>{{bk.stock}}   </td>
+        <td><button name="UPDATE">UPDATE</button></td>
+        <td><button name="DEL">DELETE</button></td>
+        </tr>
+{% endfor %}
+</table>
+</body>
+</html>
