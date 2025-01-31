@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title> <!-- Changed title to 'Add Book' -->
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+</head>
+<body>
+    <h1 class="center-header">Add New Book</h1> <!-- Changed title to 'Add New Book' -->
+
+    <form method="post" enctype="multipart/form-data">  <!-- Correct form tag with enctype -->
+        {% csrf_token %}
+        <div class="form-container">
+            {{ form.as_p }}  <!-- Render each form field -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+
+    <button type="button" class="back-btn" onclick="history.back()">Go Back</button> <!-- 'Go Back' button remains outside the form -->
+</body>
+</html>

@@ -1,3 +1,146 @@
 body{
-background:green;
+background:rgb(153, 144, 111);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #2a4d8f;
+}
+
+table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    margin-block-start: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td a {
+    color: #0a3c13;
+    text-decoration: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+a {
+    font-size: 18px;
+}
+
+.center-header {
+    text-align: center;
+}
+
+.bookshop-image {
+    display: block;
+    margin: 0 auto;
+    block-size: 250px; /* Adjust the height as needed */
+    inline-size: 1200px; /* Ensures the image is scaled properly */
+}
+
+
+/* Form container */
+.form-container {
+    inline-size: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Styling input fields */
+.form-input {
+    inline-size: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+    inline-size: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ff4c4c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #cc0000;
+}
+
+.add-book-container {
+    text-align: center;  /* Centers the button */
+    margin-top: 20px;  /* Adds spacing */
+}
+
+.add-book-btn {
+    display: inline-block;
+    background-color: #28a745;  /* Green button */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-book-btn:hover {
+    background-color: #218838;  /* Darker green on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+
+
+.book-image {
+    width: 80px;  /* Adjust size */
+    height: 120px;
+    object-fit: cover;  /* Crop image to fit */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
